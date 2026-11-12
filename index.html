@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghislain — Développeur logiciel · Fondateur d'Ankoay Studio</title>
+  <meta name="description" content="Portfolio de Ghislain, développeur logiciel et fondateur d'Ankoay Studio (Madagascar) : applications de bureau C++ / Qt, applications web PHP / Laravel et TypeScript, sites et outils sur mesure.">
+  <meta name="theme-color" content="#14110F">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Ghislain — Développeur logiciel">
+  <meta property="og:description" content="Applications de bureau, web et sur mesure. Fondateur d'Ankoay Studio.">
+  <meta property="og:image" content="assets/img/video-affiche.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="top" id="haut">
+    <div class="wrap top-in">
+      <a class="brand" href="#haut" aria-label="Accueil">
+        <span class="mono">G</span>
+        <span>Ghislain</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Navigation principale">
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#ankoay-studio">Ankoay Studio</a>
+        <a class="btn btn-small" href="#contact">Me contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- ============================================================ Présentation -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="grid"></span></div>
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <p class="eyebrow">Développeur logiciel · Madagascar</p>
+          <h1>Je conçois des logiciels <span class="acc">utiles</span>, du bureau au web.</h1>
+          <p class="lead">Je suis Ghislain, fondateur d'Ankoay Studio. Je développe des applications de bureau
+            (C++ / Qt), des applications web (PHP / Laravel, TypeScript) et des outils sur mesure,
+            de la conception jusqu'à l'installeur et au site de téléchargement.</p>
+          <div class="cta-row">
+            <a class="btn" href="#projets">Voir mes projets</a>
+            <a class="btn btn-ghost" href="https://github.com/Ghislain-Helison" target="_blank" rel="noopener">Mon GitHub</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <pre class="code"><span class="c">// AnkoayPlay — C++20 / Qt 6</span>
+<span class="k">class</span> <span class="t">Lecteur</span> {
+  <span class="t">Historique</span> historique;   <span class="c">// reprend où vous étiez</span>
+  <span class="t">Studio</span>     studio;       <span class="c">// découpe, conversion…</span>
+  <span class="t">Langue</span>     langue{<span class="s">"fr"</span>}; <span class="c">// fr · en · de</span>
+};</pre>
+          <div class="stack-chips">
+            <span>C++ / Qt</span><span>PHP / Laravel</span><span>TypeScript</span><span>FFmpeg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ Compétences -->
+    <section class="section section-dots" id="competences">
+      <div class="wrap">
+        <p class="eyebrow">Compétences</p>
+        <h2>Ce que je sais faire</h2>
+        <div class="skills">
+          <article class="skill">
+            <h3>Applications de bureau</h3>
+            <p>C++20, Qt 6 (Qt Quick / QML), Qt Multimedia, SQLite, FFmpeg.
+              Interfaces multilingues, thèmes, tests automatisés (Qt Test).</p>
+          </article>
+          <article class="skill">
+            <h3>Applications web</h3>
+            <p>PHP / Laravel, TypeScript, AdonisJS, Next.js, JavaScript, HTML / CSS,
+              Tailwind CSS. API REST, intégration d'API e-mail (Mailgun).</p>
+          </article>
+          <article class="skill">
+            <h3>Livraison et déploiement</h3>
+            <p>Installeurs Windows (NSIS, compilation croisée MinGW), paquets Ubuntu (.deb),
+              GitHub Releases, GitHub Pages, Cloudflare Pages, Git et Git Flow.</p>
+          </article>
+          <article class="skill">
+            <h3>Multimédia</h3>
+            <p>Traitement vidéo et audio avec FFmpeg : découpe sans perte, conversion, extraction du son,
+              diaporamas avec transitions et zoom lent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ Projets -->
+    <section class="section section-alt section-glow" id="projets">
+      <div class="wrap">
+        <p class="eyebrow">Projets</p>
+        <h2>Réalisations</h2>
+
+        <!-- Projet phare -->
+        <article class="case">
+          <div class="case-media">
+            <video controls preload="none" playsinline poster="assets/img/video-affiche.jpg">
+              <source src="https://ankoay-studio.pages.dev/assets/video/ankoayplay-promo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="case-body">
+            <p class="case-kicker"><img src="assets/img/logo-ankoayplay-256.png" alt="" width="36" height="36"> Projet phare</p>
+            <h3>AnkoayPlay — lecteur multimédia et studio de création</h3>
+            <p>Application de bureau gratuite pour Windows et Ubuntu, conçue et développée de A à Z.</p>
+            <ul class="ticks">
+              <li>Lecteur avec reprise automatique, historique multi-dossiers, playlists et sous-titres</li>
+              <li>Studio : découpe sans perte, conversion, extraction audio, diaporamas, collages (FFmpeg)</li>
+              <li>Interface en français, anglais et allemand, changement de langue immédiat</li>
+              <li>Installeur Windows trilingue et paquet Ubuntu, tests automatisés</li>
+            </ul>
+            <p class="chips"><span>C++20</span><span>Qt 6 / QML</span><span>FFmpeg</span><span>SQLite</span><span>NSIS</span></p>
+            <div class="cta-row">
+              <a class="btn" href="https://ankoay-studio.pages.dev/#ankoayplay" target="_blank" rel="noopener">Voir et télécharger</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="projects">
+          <article class="project">
+            <img src="assets/img/site-ankoay-studio-800.webp" alt="Site Ankoay Studio" loading="lazy" width="800" height="500">
+            <div class="project-body">
+              <h3>Site Ankoay Studio</h3>
+              <p>Site vitrine de l'entreprise et page de téléchargement, avec compteur de téléchargements
+                en direct (API GitHub), animations et version mobile.</p>
+              <p class="chips"><span>HTML / CSS / JS</span><span>Cloudflare Pages</span><span>API GitHub</span></p>
+              <p class="links"><a href="https://ankoay-studio.pages.dev" target="_blank" rel="noopener">Voir le site</a>
+                · <a href="https://github.com/Ghislain-Helison/ankoay-studio" target="_blank" rel="noopener">Code</a></p>
+            </div>
+          </article>
+          <article class="project project-text">
+            <div class="project-body">
+              <p class="badge">Application web</p>
+              <h3>Suivi des e-mails</h3>
+              <p>Application Laravel qui suit les e-mails envoyés par SMTP (Mailgun ou tout autre serveur)
+                pour en connaître le parcours depuis le site web.</p>
+              <p class="chips"><span>PHP</span><span>Laravel</span><span>Mailgun</span></p>
+              <p class="links muted">Projet privé</p>
+            </div>
+          </article>
+          <article class="project project-text">
+            <div class="project-body">
+              <p class="badge">Application web</p>
+              <h3>Application de discussion</h3>
+              <p>Application de messagerie construite avec Next.js et TypeScript.</p>
+              <p class="chips"><span>TypeScript</span><span>Next.js</span><span>React</span></p>
+              <p class="links"><a href="https://github.com/Ghislain-Helison/chat-app" target="_blank" rel="noopener">Code</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ Ankoay Studio -->
+    <section class="section section-play" id="ankoay-studio">
+      <div class="vinyl-bg" aria-hidden="true"><span class="vinyl"></span></div>
+      <div class="wrap">
+        <p class="eyebrow">Mon entreprise</p>
+        <h2>Ankoay Studio</h2>
+        <p class="section-lead">J'ai fondé Ankoay Studio pour créer des logiciels sur mesure et une famille
+          de logiciels pour les entreprises, les écoles et le grand public.</p>
+        <div class="family">
+          <a class="fam" href="https://ankoay-studio.pages.dev/#ankoayplay" target="_blank" rel="noopener">
+            <img src="assets/img/logo-ankoayplay-256.png" alt="" width="72" height="72">
+            <b>AnkoayPlay</b><span>Lecteur et studio de création, gratuit</span></a>
+          <a class="fam" href="https://ankoay-studio.pages.dev/#ankoay-central" target="_blank" rel="noopener">
+            <img src="assets/img/logo-ankoay-central-256.png" alt="" width="72" height="72">
+            <b>Ankoay Central</b><span>Gestion multiprojet avec assistance IA</span></a>
+          <a class="fam" href="https://ankoay-studio.pages.dev/#ankoay-academy" target="_blank" rel="noopener">
+            <img src="assets/img/logo-ankoay-academy-256.png" alt="" width="72" height="72">
+            <b>Ankoay Academy</b><span>Logiciels d'apprentissage</span></a>
+          <div class="fam">
+            <img src="assets/img/logo-ankoay-gameart-256.png" alt="" width="72" height="72">
+            <b>Ankoay GameArt</b><span>Jeux vidéo</span></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-ghost" href="https://ankoay-studio.pages.dev" target="_blank" rel="noopener">Visiter le site d'Ankoay Studio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="wrap contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Un projet, une mission, une question ?</h2>
+          <p class="section-lead">Écrivez-moi : je vous réponds avec plaisir.</p>
+        </div>
+        <div class="contact-card">
+          <ul class="contact-list">
+            <li><a href="mailto:ankoaystudio@gmail.com"><b>E-mail</b><span>ankoaystudio@gmail.com</span></a></li>
+            <li><a href="https://github.com/Ghislain-Helison" target="_blank" rel="noopener"><b>GitHub</b><span>github.com/Ghislain-Helison</span></a></li>
+            <li><a href="https://ankoay-studio.pages.dev" target="_blank" rel="noopener"><b>Entreprise</b><span>ankoay-studio.pages.dev</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <p>© <span id="annee">2026</span> Ghislain · Fondateur d'<a href="https://ankoay-studio.pages.dev">Ankoay Studio</a> · Madagascar</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
